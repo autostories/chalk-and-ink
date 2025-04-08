@@ -1,0 +1,52 @@
+{
+  "name": "chalk-and-ink",
+  "displayName": "Chalk and Ink",
+  "description": "A VSCode theme extension to improve development experience.",
+  "version": "0.0.0",
+  "license": "MulanPSL-2.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/autostories/chalk-and-ink.git"
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Chalk",
+        "id": "chalk-and-ink:chalk-color",
+        "path": "./src/chalk-color-theme.json",
+        "uiTheme": "vs-dark"
+      }
+    ],
+    "iconThemes": [
+      {
+        "label": "Chalk",
+        "id": "chalk-and-ink:chalk-icon",
+        "path": "./src/chalk-icon-theme.json"
+      }
+    ],
+    "productIconThemes": [
+      {
+        "label": "Chalk",
+        "id": "chalk-and-ink:chalk-product-icon",
+        "path": "./src/chalk-product-icon-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "vite-node build.ts",
+    "format": "prettier --write .",
+    "review": "prettier --check . && oxlint",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "oxlint": "^0.16.5",
+    "prettier": "^3.5.3",
+    "prettier-plugin-sh": "^0.16.1",
+    "vite-node": "^3.1.1"
+  }
+}

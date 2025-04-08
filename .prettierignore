@@ -1,0 +1,5 @@
+# Auto generated but Git tracked files.
+pnpm-lock.yaml
+
+# Prettier cannot resolve such nested gitignore outside.
+.husky/_/

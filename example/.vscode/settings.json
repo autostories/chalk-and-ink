@@ -1,0 +1,4 @@
+{
+  // Detect outer Git repo at package root to demonstrate Git colors.
+  "git.openRepositoryInParentFolders": "always"
+}

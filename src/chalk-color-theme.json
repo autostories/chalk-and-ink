@@ -1,0 +1,35 @@
+{
+  // https://code.visualstudio.com/api/extension-guides/color-theme
+  "colors": {
+    "activityBar.activeBorder": "#1878d8",
+    "activityBar.background": "#151615",
+    "activityBar.border": "#2a2b2a",
+    "activityBar.foreground": "#d6d8da",
+    "activityBar.inactiveForeground": "#737475",
+    "editor.background": "#1a1b1b",
+    "editorLineNumber.activeForeground": "#3f9ede",
+    "editorLineNumber.foreground": "#575a5c",
+    "foreground": "#b8bbbe",
+    "minimap.background": "#151615",
+    "panel.background": "#151615",
+    "panel.border": "#2a2b2a",
+    "panelTitle.activeBorder": "#0b78e5",
+    "panelTitle.activeForeground": "#d6d8da",
+    "panelTitle.inactiveForeground": "#737475",
+    "sideBar.background": "#151615",
+    "sideBar.border": "#2a2b2a",
+    "sideBarSectionHeader.background": "#151615",
+    "sideBarSectionHeader.border": "#2a2b2a",
+    "statusBar.background": "#151615",
+    "statusBar.border": "#2a2b2a",
+    "statusBar.foreground": "#b9bcc0",
+    "statusBarItem.remoteBackground": "#1b6db5",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "titleBar.activeBackground": "#151615",
+    "titleBar.border": "#2a2b2a",
+    "titleBar.inactiveBackground": "#161716"
+  },
+  "semanticHighlighting": true,
+  "semanticTokenColors": {},
+  "tokenColors": []
+}

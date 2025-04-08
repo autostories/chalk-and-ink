@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      // Launch the extension host inside the example folder.
+      "name": "extension",
+      "args": [
+        "${workspaceFolder}/example",
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ],
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      // Launch the extension host without specifying a workspace.
+      "name": "extension unspecified",
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
+      "request": "launch",
+      "type": "extensionHost"
+    }
+  ]
+}

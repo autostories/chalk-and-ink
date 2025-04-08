@@ -1,0 +1,17 @@
+{
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+
+  // Auto format on save (recommended extensions required).
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": { "source.organizeImports": "always" },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // File nesting patterns (enable as you need).
+  "explorer.fileNesting.patterns": {
+    "license.txt": "license.*.txt",
+    "package.json": "pnpm-lock.yaml"
+  }
+}
