@@ -7,6 +7,8 @@
     "activityBar.foreground": "#d6d8da",
     "activityBar.inactiveForeground": "#737475",
     "editor.background": "#1a1b1b",
+    "editor.lineHighlightBorder": "#0000",
+    "editor.lineHighlightBackground": "#141313",
     "editorLineNumber.activeForeground": "#3f9ede",
     "editorLineNumber.foreground": "#575a5c",
     "foreground": "#b8bbbe",
@@ -31,5 +33,33 @@
   },
   "semanticHighlighting": true,
   "semanticTokenColors": {},
-  "tokenColors": []
+  "tokenColors": [
+    {
+      "scope": ["punctuation.definition.comment.ini"],
+      "settings": { "foreground": "#585252", "fontStyle": "" }
+    },
+    {
+      // Variables.
+      "scope": ["source.ignore", "source.ini"],
+      "settings": { "foreground": "#b1baaf", "fontStyle": "" }
+    },
+    {
+      // Documentation comments.
+      "scope": [
+        "comment.line.number-sign.ignore",
+        "comment.line.number-sign.ini"
+      ],
+      "settings": { "foreground": "#516b49", "fontStyle": "italic" }
+    },
+    {
+      // Assign operators.
+      "scope": ["punctuation.separator.key-value.ini"],
+      "settings": { "foreground": "#75b4b9", "fontStyle": "" }
+    },
+    {
+      // Keys and field names.
+      "scope": ["keyword.other.definition.ini"],
+      "settings": { "foreground": "#9073af", "fontStyle": "italic" }
+    }
+  ]
 }

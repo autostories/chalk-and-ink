@@ -3,6 +3,7 @@
   "displayName": "Chalk and Ink",
   "description": "A VSCode theme extension to improve development experience.",
   "version": "0.0.0",
+  "type": "module",
   "license": "MulanPSL-2.0",
   "private": true,
   "repository": {
@@ -43,10 +44,14 @@
     "prepare": "husky"
   },
   "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vscode/vsce": "^3.3.2",
+    "comment-json": "^4.2.5",
     "husky": "^9.1.7",
     "oxlint": "^0.16.5",
     "prettier": "^3.5.3",
     "prettier-plugin-sh": "^0.16.1",
+    "svgo": "^3.3.2",
     "vite-node": "^3.1.1"
   }
 }

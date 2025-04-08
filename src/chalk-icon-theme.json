@@ -2,12 +2,16 @@
   // https://code.visualstudio.com/api/extension-guides/file-icon-theme
   "iconDefinitions": {
     "file": { "iconPath": "./chalk/template/file.svg" },
-    "folder": { "iconPath": "./chalk/template/folder.svg" }
+    "folder": { "iconPath": "./chalk/template/folder.svg" },
+    "version-red": { "iconPath": "./chalk/template/version-red.svg" }
   },
   "file": "file",
   "folder": "folder",
   "folderNames": {},
-  "fileNames": {},
+  "fileNames": {
+    ".gitignore": "version-red",
+    ".gitattributes": "version-red"
+  },
   "fileExtensions": {},
   "languageIds": {}
 }
