@@ -1,0 +1,25 @@
+# Toml comments.
+key = "value"
+"double quoted key" = "escape chars: \n\r\t\"\u4e2d\U0001f600"
+'single quote key' = 'singe line without escape chars ""\\\\'
+integer = 123
+float = 123.456
+"boolean true" = true
+"boolean false" = false
+indented_multi_line = """
+  first line
+  second line
+"""
+
+inline-array = [1, 2, 3]
+inline-table = { key = "value", number = 123, boolean = true }
+
+[table]
+key = "value"
+number = 123
+boolean = true
+
+[[array]]
+key = "value"
+number = 123
+boolean = true

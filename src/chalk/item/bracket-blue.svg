@@ -6,7 +6,7 @@
   viewBox="0 0 24 24"
   version="1.1"
   id="svg1"
-  sodipodi:docname="folder.svg"
+  sodipodi:docname="bracket-blue.svg"
   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,9 +24,9 @@
     inkscape:deskcolor="#1e1e1e"
     inkscape:document-units="px"
     showgrid="true"
-    inkscape:zoom="15.128495"
-    inkscape:cx="12.724332"
-    inkscape:cy="12.889584"
+    inkscape:zoom="11.356834"
+    inkscape:cx="14.13246"
+    inkscape:cy="16.377804"
     inkscape:window-width="1168"
     inkscape:window-height="743"
     inkscape:window-x="217"
@@ -53,10 +53,28 @@
   <defs id="defs1" />
   <g inkscape:label="main" inkscape:groupmode="layer" id="layer1">
     <path
-      style="fill:#6b6b6b;fill-opacity:0.30000001;stroke:#9e9e9e;stroke-width:2;stroke-linejoin:round;stroke-opacity:1"
-      d="M 2,4 V 19 H 22 V 7 H 12 L 9,4 Z"
+      style="fill:none;fill-opacity:0.267368;stroke:#367aa7;stroke-width:3;stroke-opacity:1"
+      d="M 7,15 H 17"
+      id="path3"
+      inkscape:label="eq-bottom"
+    />
+    <path
+      style="fill:none;fill-opacity:0.267368;stroke:#367aa7;stroke-width:3;stroke-opacity:1"
+      d="M 7,9 H 17"
+      id="path2"
+      inkscape:label="eq-top"
+    />
+    <path
+      style="fill:none;fill-opacity:0.267368;stroke:#367aa7;stroke-width:3;stroke-opacity:1"
+      d="m 16,3 h 5 v 18 h -5"
+      id="path1-2"
+      inkscape:label="right"
+    />
+    <path
+      style="fill:none;fill-opacity:0.267368;stroke:#367aa7;stroke-width:3;stroke-opacity:1"
+      d="M 8,3 H 3 v 18 h 5"
       id="path1"
-      inkscape:label="folder"
+      inkscape:label="left"
     />
   </g>
 </svg>

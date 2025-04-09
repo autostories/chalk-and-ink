@@ -35,31 +35,196 @@
   "semanticTokenColors": {},
   "tokenColors": [
     {
-      "scope": ["punctuation.definition.comment.ini"],
-      "settings": { "foreground": "#585252", "fontStyle": "" }
+      // Dim comments punctuations.
+      "scope": [
+        "punctuation.definition.comment.json.comments",
+        "punctuation.definition.comment.json",
+        "punctuation.definition.comment.ini",
+        "punctuation.definition.comment.toml",
+        "punctuation.definition.comment.xml",
+        "punctuation.definition.comment.yaml"
+      ],
+      "settings": { "foreground": "#504a4a", "fontStyle": "" }
+    },
+    {
+      // Inline and block comments.
+      "scope": [
+        "comment.line.dotenv",
+        "comment.line.double-slash.js",
+        "comment.block.json.comments",
+        "comment.line.number-sign.toml",
+        "comment.block.xml",
+        "comment.line.number-sign.yaml"
+      ],
+      "settings": { "foreground": "#62696a", "fontStyle": "italic" }
+    },
+    {
+      // Dim punctuations.
+      "scope": [
+        "punctuation.support.type.property-name.begin.json",
+        "punctuation.support.type.property-name.end.json",
+        "punctuation.definition.string.begin.json",
+        "punctuation.definition.string.end.json",
+        "punctuation.separator.namespace.xml",
+        "punctuation.definition.string.begin.yaml",
+        "punctuation.definition.string.end.yaml"
+      ],
+      "settings": { "foreground": "#7c7272", "fontStyle": "" }
+    },
+    {
+      // Punctuations.
+      "scope": [
+        "punctuation.definition.dictionary.begin.json",
+        "punctuation.definition.dictionary.end.json",
+        "punctuation.definition.array.begin.json",
+        "punctuation.definition.array.end.json",
+        "punctuation.separator.dictionary.pair.json",
+        "punctuation.separator.dictionary.key-value.json",
+        "punctuation.separator.array.json",
+        "punctuation.definition.table.toml",
+        "punctuation.definition.array.table.toml",
+        "punctuation.definition.array.toml",
+        "punctuation.definition.table.inline.toml",
+        "punctuation.separator.array.toml",
+        "punctuation.separator.table.inline.toml",
+        "punctuation.definition.tag.xml",
+        "punctuation.separator.key-value.mapping.yaml",
+        "punctuation.definition.sequence.begin.yaml",
+        "punctuation.definition.sequence.end.yaml",
+        "punctuation.separator.sequence.yaml",
+        "punctuation.definition.mapping.begin.yaml",
+        "punctuation.definition.mapping.end.yaml",
+        "punctuation.separator.mapping.yaml",
+        "punctuation.definition.block.sequence.item.yaml"
+      ],
+      "settings": { "foreground": "#a8b6a6", "fontStyle": "" }
     },
     {
       // Variables.
-      "scope": ["source.ignore", "source.ini"],
+      "scope": [
+        "property.value.dotenv",
+        "source.ignore",
+        "source.ini",
+        "text.xml",
+        "variable.other.alias.yaml"
+      ],
       "settings": { "foreground": "#b1baaf", "fontStyle": "" }
+    },
+    {
+      // Variable definitions.
+      "scope": ["entity.name.type.anchor.yaml"],
+      "settings": { "foreground": "#b1baaf", "fontStyle": "underline" }
     },
     {
       // Documentation comments.
       "scope": [
         "comment.line.number-sign.ignore",
-        "comment.line.number-sign.ini"
+        "comment.line.number-sign.ini",
+        "comment.block.documentation.json.comments"
       ],
-      "settings": { "foreground": "#516b49", "fontStyle": "italic" }
+      "settings": { "foreground": "#69825f", "fontStyle": "italic" }
+    },
+    {
+      // Language build-in constants.
+      "scope": [
+        "constant.language.json",
+        "constant.language.boolean.toml",
+        "constant.language.boolean.yaml",
+        "constant.language.null.yaml"
+      ],
+      "settings": { "foreground": "#d58080", "fontStyle": "italic" }
+    },
+    {
+      // Special operators.
+      "scope": [
+        "keyword.control.flow.block-scalar.literal.yaml",
+        "keyword.control.flow.block-scalar.folded.yaml",
+        "storage.modifier.chomping-indicator.yaml",
+        "punctuation.definition.anchor.yaml",
+        "punctuation.definition.alias.yaml",
+        "constant.language.merge.yaml"
+      ],
+      "settings": { "foreground": "#d58080", "fontStyle": "" }
+    },
+    {
+      // Escape characters.
+      "scope": [
+        "constant.character.escape.json",
+        "constant.character.escape.toml",
+        "constant.character.escape.yaml"
+      ],
+      "settings": { "foreground": "#e29a48", "fontStyle": "" }
+    },
+    {
+      "scope": [],
+      "settings": { "foreground": "#ebcb2b", "fontStyle": "" }
+    },
+    {
+      // String.
+      "scope": [
+        "string.quoted.double.json",
+        "string.quoted.single.basic.line.toml",
+        "string.quoted.single.literal.line.toml",
+        "string.quoted.triple.basic.block.toml",
+        "string.quoted.double.xml",
+        "string.unquoted.plain.out.yaml",
+        "string.quoted.single.yaml",
+        "string.quoted.double.yaml",
+        "string.unquoted.block.yaml",
+        "string.unquoted.plain.in.yaml"
+      ],
+      "settings": { "foreground": "#6ca375", "fontStyle": "" }
+    },
+    {
+      // Attribute names.
+      "scope": [
+        "entity.other.attribute-name.xml",
+        "entity.other.attribute-name.localname.xml"
+      ],
+      "settings": { "foreground": "#728688", "fontStyle": "italic" }
     },
     {
       // Assign operators.
-      "scope": ["punctuation.separator.key-value.ini"],
+      "scope": [
+        "keyword.operator.assignment.dotenv",
+        "punctuation.separator.key-value.ini",
+        "punctuation.eq.toml",
+        "meta.tag.preprocessor.xml"
+      ],
       "settings": { "foreground": "#75b4b9", "fontStyle": "" }
     },
     {
+      // Number.
+      "scope": [
+        "constant.numeric.json",
+        "constant.numeric.integer.toml",
+        "constant.numeric.float.toml",
+        "constant.numeric.integer.yaml",
+        "constant.numeric.float.yaml"
+      ],
+      "settings": { "foreground": "#32a1d4", "fontStyle": "" }
+    },
+    {
+      "scope": [
+        "entity.name.tag.namespace.xml",
+        "entity.other.attribute-name.namespace.xml"
+      ],
+      "settings": { "foreground": "#4996d5", "fontStyle": "italic" }
+    },
+    {
       // Keys and field names.
-      "scope": ["keyword.other.definition.ini"],
-      "settings": { "foreground": "#9073af", "fontStyle": "italic" }
+      "scope": [
+        "variable.key.dotenv",
+        "keyword.other.definition.ini",
+        "support.type.property-name.json",
+        "support.type.property-name.toml",
+        "support.type.property-name.table.toml",
+        "support.type.property-name.array.toml",
+        "entity.name.tag.xml",
+        "entity.name.tag.localname.xml",
+        "entity.name.tag.yaml"
+      ],
+      "settings": { "foreground": "#9774bb", "fontStyle": "italic" }
     }
   ]
 }

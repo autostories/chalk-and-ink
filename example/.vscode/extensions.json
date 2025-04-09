@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "tamasfe.even-better-toml",
+    "redhat.vscode-yaml",
+    "redhat.vscode-xml",
+    "oxc.oxc-vscode"
+  ]
+}

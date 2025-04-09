@@ -1,0 +1,18 @@
+/** Documentation comment in JSON with Comments. */
+{
+  // Inline comment.
+  "string": "string",
+  "integer": 123,
+  "float": 123.456,
+  "bool true": true,
+  "bool false": false,
+  "null": null,
+  "escape characters": "code\n\r\t\b\f\\\"'\u4e2d",
+
+  /* Block comment. */
+  "array": ["abc", 123, true, null, { "key": "value" }],
+  "object": {
+    "key": "value",
+    "array": ["abc", 123, true, null]
+  }
+}

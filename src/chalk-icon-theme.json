@@ -1,17 +1,54 @@
 {
   // https://code.visualstudio.com/api/extension-guides/file-icon-theme
   "iconDefinitions": {
+    // Templates.
     "file": { "iconPath": "./chalk/template/file.svg" },
     "folder": { "iconPath": "./chalk/template/folder.svg" },
-    "version-red": { "iconPath": "./chalk/template/version-red.svg" }
+    "gear-dim": { "iconPath": "./chalk/template/gear-dim.svg" },
+    "version-red": { "iconPath": "./chalk/template/version-red.svg" },
+
+    // Items.
+    "braces-red": { "iconPath": "./chalk/item/braces-red.svg" },
+    "braces-yellow": { "iconPath": "./chalk/item/braces-yellow.svg" },
+    "bracket-blue": { "iconPath": "./chalk/item/bracket-blue.svg" },
+    "chevron-green": { "iconPath": "./chalk/item/chevron-green.svg" },
+
+    // Folder.
+    "folder-gear": { "iconPath": "./chalk/folder/gear.svg" }
   },
+
   "file": "file",
   "folder": "folder",
-  "folderNames": {},
+
+  "folderNames": {
+    "config": "folder-gear",
+    "configs": "folder-gear",
+    "configuration": "folder-gear",
+    "configurations": "folder-gear",
+    "setting": "folder-gear",
+    "settings": "folder-gear"
+  },
+
   "fileNames": {
     ".gitignore": "version-red",
     ".gitattributes": "version-red"
   },
-  "fileExtensions": {},
-  "languageIds": {}
+
+  "fileExtensions": {
+    "env": "gear-dim",
+    "json": "braces-yellow",
+    "yaml": "braces-red",
+    "yml": "braces-red",
+    "toml": "bracket-blue",
+    "xml": "chevron-green"
+  },
+
+  "languageIds": {
+    "dotenv": "gear-dim",
+    "json": "braces-yellow",
+    "jsonc": "braces-yellow",
+    "yaml": "braces-red",
+    "toml": "bracket-blue",
+    "xml": "chevron-green"
+  }
 }

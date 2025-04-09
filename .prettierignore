@@ -3,3 +3,6 @@ pnpm-lock.yaml
 
 # Prettier cannot resolve such nested gitignore outside.
 .husky/_/
+
+# SVG files are edited with GUI, but might conflict with @prettier/plugin-xml.
+*.svg

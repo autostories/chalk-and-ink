@@ -1,0 +1,42 @@
+# Don't make prettier-ignore comment first line,
+# or it will ignore the whole file.
+placeholder: placeholder
+
+# prettier-ignore
+single quote string: 'single quote string'
+double quote string: "double quote string"
+unquoted string: unquoted string
+multiline string literal: |
+  multiline string
+multiline string folded: >-
+  multiline string folded
+
+# Unicode with non-digit hexadecimal escape sequence might not supported here.
+escape characters: "\n\r\t\b\f\v\0\a\e\x01\u4e2d\U0001f600"
+
+integer: 123
+float: 123.456
+version: 1.2.3 # Recognized as float.
+boolean true: true
+boolean false: false
+null value: null
+
+# prettier-ignore
+sequence inline: [abc, 'abc', "abc", 123, true, false, null]
+map inline: { key: value, number: 123, sequence: [abc, 123, true, null] }
+sequence lines:
+  - { key: value, number: 123, sequence: [abc, 123, true, null] }
+  - abc
+  - 123
+  - true
+  - null
+
+# Code reuse via anchor in yaml.
+anchor: &anchor
+  key: value
+  number: 123
+  sequence: [abc, 123, true, null]
+alias: *anchor
+reuse:
+  <<: *anchor
+  key: new value

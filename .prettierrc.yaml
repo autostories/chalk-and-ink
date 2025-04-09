@@ -1,2 +1,9 @@
 semi: false
-plugins: [prettier-plugin-sh]
+
+plugins:
+  - prettier-plugin-sh
+  - prettier-plugin-toml
+  - "@prettier/plugin-xml"
+
+overrides:
+  - { files: "*.jsonc", options: { trailingComma: none } }
