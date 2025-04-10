@@ -37,7 +37,7 @@
     {
       // Dim comments punctuations.
       "scope": [
-        "punctuation.definition.comment.json.comments",
+        "punctuation.definition.comment.html",
         "punctuation.definition.comment.json",
         "punctuation.definition.comment.ini",
         "punctuation.definition.comment.toml",
@@ -50,6 +50,7 @@
       // Inline and block comments.
       "scope": [
         "comment.line.dotenv",
+        "comment.block.html",
         "comment.line.double-slash.js",
         "comment.block.json.comments",
         "comment.line.number-sign.toml",
@@ -61,10 +62,18 @@
     {
       // Dim punctuations.
       "scope": [
+        "punctuation.definition.string.begin.html",
+        "punctuation.definition.string.end.html",
+        "punctuation.definition.string.begin.js",
+        "punctuation.definition.string.end.js",
+        "punctuation.definition.template-expression.begin.js",
+        "punctuation.definition.template-expression.end.js",
         "punctuation.support.type.property-name.begin.json",
         "punctuation.support.type.property-name.end.json",
         "punctuation.definition.string.begin.json",
         "punctuation.definition.string.end.json",
+        "punctuation.definition.string.begin.xml",
+        "punctuation.definition.string.end.xml",
         "punctuation.separator.namespace.xml",
         "punctuation.definition.string.begin.yaml",
         "punctuation.definition.string.end.yaml"
@@ -74,6 +83,15 @@
     {
       // Punctuations.
       "scope": [
+        "punctuation.section.property-list.begin.bracket.curly.css",
+        "punctuation.section.property-list.end.bracket.curly.css",
+        "punctuation.separator.key-value.css",
+        "punctuation.terminator.rule.css",
+        "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html",
+        "punctuation.definition.block.js",
+        "punctuation.definition.parameters.begin.js",
+        "punctuation.definition.parameters.end.js",
         "punctuation.definition.dictionary.begin.json",
         "punctuation.definition.dictionary.end.json",
         "punctuation.definition.array.begin.json",
@@ -103,6 +121,7 @@
       // Variables.
       "scope": [
         "property.value.dotenv",
+        "text.html.derivative",
         "source.ignore",
         "source.ini",
         "text.xml",
@@ -128,6 +147,8 @@
       // Language build-in constants.
       "scope": [
         "constant.language.json",
+        "storage.type.function.js",
+        "storage.type.js",
         "constant.language.boolean.toml",
         "constant.language.boolean.yaml",
         "constant.language.null.yaml"
@@ -137,6 +158,7 @@
     {
       // Special operators.
       "scope": [
+        "keyword.operator.combinator.css",
         "keyword.control.flow.block-scalar.literal.yaml",
         "keyword.control.flow.block-scalar.folded.yaml",
         "storage.modifier.chomping-indicator.yaml",
@@ -156,16 +178,36 @@
       "settings": { "foreground": "#e29a48", "fontStyle": "" }
     },
     {
+      // Functions.
+      "scope": ["entity.name.function.js"],
+      "settings": { "foreground": "#dfca61", "fontStyle": "" }
+    },
+    {
+      // Methods.
       "scope": [],
-      "settings": { "foreground": "#ebcb2b", "fontStyle": "" }
+      "settings": { "foreground": "#dfca61", "fontStyle": "italic" }
+    },
+    {
+      // HTML and CSS tags.
+      "scope": [
+        "entity.name.tag.html",
+        "entity.name.tag.css",
+        "meta.property-name.css"
+      ],
+      "settings": { "foreground": "#cab136", "fontStyle": "italic" }
     },
     {
       // String.
       "scope": [
+        "support.constant.property-value.css",
+        "string.quoted.double.js",
+        "string.quoted.single.js",
+        "string.template.js",
         "string.quoted.double.json",
         "string.quoted.single.basic.line.toml",
         "string.quoted.single.literal.line.toml",
         "string.quoted.triple.basic.block.toml",
+        "string.quoted.double.html",
         "string.quoted.double.xml",
         "string.unquoted.plain.out.yaml",
         "string.quoted.single.yaml",
@@ -178,6 +220,7 @@
     {
       // Attribute names.
       "scope": [
+        "support.type.property-name.css",
         "entity.other.attribute-name.xml",
         "entity.other.attribute-name.localname.xml"
       ],
@@ -187,7 +230,9 @@
       // Assign operators.
       "scope": [
         "keyword.operator.assignment.dotenv",
+        "punctuation.separator.key-value.html",
         "punctuation.separator.key-value.ini",
+        "keyword.operator.assignment.js",
         "punctuation.eq.toml",
         "meta.tag.preprocessor.xml"
       ],
@@ -196,6 +241,7 @@
     {
       // Number.
       "scope": [
+        "constant.numeric.css",
         "constant.numeric.json",
         "constant.numeric.integer.toml",
         "constant.numeric.float.toml",
@@ -203,6 +249,11 @@
         "constant.numeric.float.yaml"
       ],
       "settings": { "foreground": "#32a1d4", "fontStyle": "" }
+    },
+    {
+      // Number units.
+      "scope": ["keyword.other.unit.vh.css", "keyword.other.unit.vw.css"],
+      "settings": { "foreground": "#32a1d4", "fontStyle": "italic bold" }
     },
     {
       "scope": [
@@ -214,7 +265,9 @@
     {
       // Keys and field names.
       "scope": [
+        "entity.other.attribute-name.id.css",
         "variable.key.dotenv",
+        "entity.other.attribute-name.html",
         "keyword.other.definition.ini",
         "support.type.property-name.json",
         "support.type.property-name.toml",

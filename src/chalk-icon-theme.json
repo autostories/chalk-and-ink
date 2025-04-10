@@ -12,9 +12,19 @@
     "braces-yellow": { "iconPath": "./chalk/item/braces-yellow.svg" },
     "bracket-blue": { "iconPath": "./chalk/item/bracket-blue.svg" },
     "chevron-green": { "iconPath": "./chalk/item/chevron-green.svg" },
+    "hexagonal-green": { "iconPath": "./chalk/item/hexagonal-green.svg" },
+    "square-red-h": { "iconPath": "./chalk/item/square-red-h.svg" },
+    "square-blue-t": { "iconPath": "./chalk/item/square-blue-t.svg" },
+    "square-purple-c": { "iconPath": "./chalk/item/square-purple-c.svg" },
+    "square-purple-w": { "iconPath": "./chalk/item/square-purple-w.svg" },
+    "square-yellow-j": { "iconPath": "./chalk/item/square-yellow-j.svg" },
+    "star": { "iconPath": "./chalk/item/star.svg" },
 
-    // Folder.
-    "folder-gear": { "iconPath": "./chalk/folder/gear.svg" }
+    // Folders.
+    "folder-gear": { "iconPath": "./chalk/folder/gear.svg" },
+
+    // Files.
+    "file-star": { "iconPath": "./chalk/file/star.svg" }
   },
 
   "file": "file",
@@ -31,24 +41,38 @@
 
   "fileNames": {
     ".gitignore": "version-red",
-    ".gitattributes": "version-red"
+    ".gitattributes": "version-red",
+    "favicon.svg": "star",
+    "favicon.ico": "star",
+    "favicon.png": "star",
+    "package.json": "hexagonal-green"
   },
 
   "fileExtensions": {
     "env": "gear-dim",
+    "js": "square-yellow-j",
     "json": "braces-yellow",
-    "yaml": "braces-red",
-    "yml": "braces-red",
+    "svg": "file-star",
     "toml": "bracket-blue",
-    "xml": "chevron-green"
+    "ts": "square-blue-t",
+    "wasm": "square-purple-w",
+    "xml": "chevron-green",
+    "yaml": "braces-red",
+    "yml": "braces-red"
   },
 
   "languageIds": {
+    "css": "square-purple-c",
     "dotenv": "gear-dim",
+    "html": "square-red-h",
+    "javascript": "square-yellow-j",
     "json": "braces-yellow",
     "jsonc": "braces-yellow",
-    "yaml": "braces-red",
+    "svg": "file-star",
     "toml": "bracket-blue",
-    "xml": "chevron-green"
+    "typescript": "square-blue-t",
+    "wat": "square-purple-w",
+    "xml": "chevron-green",
+    "yaml": "braces-red"
   }
 }
